@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f9f9f9"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/station_start" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="出发城市"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/station_arrived" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="到达城市"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" >
+
+        <com.example.utils.ClearEditText
+            android:id="@+id/stationSelect_left"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawableRight="@drawable/delete_selector"
+            android:hint="始发城市"
+            android:singleLine="true" 
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            >
+        </com.example.utils.ClearEditText>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:src="@drawable/station_interval" />
+
+        <com.example.utils.ClearEditText
+            android:id="@+id/stationSelect_arrived"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawableRight="@drawable/delete_selector"
+            android:hint="到达城市"
+            android:singleLine="true" 
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            >
+        </com.example.utils.ClearEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/station_hotcity"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门城市"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <GridView
+            android:id="@+id/stationSelect_gv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:numColumns="4" 
+            android:layout_margin="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none"
+            >
+        </GridView>
+
+    </LinearLayout>
+
+</LinearLayout>

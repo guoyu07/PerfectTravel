@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.perfecttravel"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+    
+    <!-- 在SDCard中创建于删除文件的权限 -->  
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+    <!-- 往SDCard中写入数据的权限 -->  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- shareSDK -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    
+  　<!-- 有米广告 -->
+　<uses-permission android:name="android.permission.GET_TASKS" />
+　<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+　<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    　　
+    <application
+        android:name="com.example.perfecttravel.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.thinkland.juheapi.openid"
+            android:value="JH3ff94d2591df2c1ac3d1d955e82e9c35"
+             />
+        
+        <meta-data
+              android:name="splashAnim"
+              android:value="false" />
+        
+        <activity
+            android:name="com.example.perfecttravel.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.perfecttravel.TrainResultActivity"
+            android:label="@string/title_activity_train_result"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" >
+        </activity>
+        <activity
+            android:name="com.example.perfecttravel.SkipActivity"
+            android:label="@string/title_activity_skip"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        
+        </activity>
+        <activity
+            android:name="com.example.perfecttravel.StationSelectActivity"
+            android:label="@string/title_activity_station_select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.perfecttravel.StationResultActivity"
+            android:label="@string/title_activity_station_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.perfecttravel.FlightResultActivity"
+            android:label="@string/title_activity_flight_result"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" >
+        </activity>
+        <activity
+            android:name="com.example.perfecttravel.RouteResultActivity"
+            android:label="@string/title_activity_route_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.perfecttravel.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.perfecttravel.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 易信分享回调 -->
+        <activity
+            android:name="com.example.perfecttravel.yxapi.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        <activity
+            android:name="com.example.perfecttravel.WelcomeActivity"
+            android:label="@string/title_activity_welcome" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" 
+            >
+            
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+        android:name="net.youmi.android.AdBrowser"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+    </activity>
+    <service
+        android:name="net.youmi.android.AdService" >
+    </service>
+    <receiver
+        android:name="net.youmi.android.AdReceiver" >
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_ADDED" />
+            <data android:scheme="package" />
+        </intent-filter>
+    </receiver>
+        
+    </application>
+
+</manifest>

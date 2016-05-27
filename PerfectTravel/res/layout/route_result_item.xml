@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:padding="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+           android:id="@+id/route_item_FlightNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CA2004"
+            android:textColor="#32ab76"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+     android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/route_item_DepTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:30" />
+
+        <TextView
+            android:id="@+id/route_item_ArrTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:30" />
+    </LinearLayout>
+
+    <LinearLayout
+     android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/route_item_Dexpected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--" />
+
+        <TextView
+            android:id="@+id/route_item_Aexpected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/route_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划"
+            android:textColor="#32ab76" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/route_item_to"
+            android:layout_marginLeft="10dp"
+             />
+    </LinearLayout>
+
+</LinearLayout>

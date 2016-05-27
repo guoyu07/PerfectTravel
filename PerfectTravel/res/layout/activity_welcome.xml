@@ -1,0 +1,47 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.perfecttravel.WelcomeActivity"
+ >
+     <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_wel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </android.support.v4.view.ViewPager>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" 
+         android:orientation="horizontal"
+         android:gravity="center_horizontal"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="40dp"        
+         >
+
+         <ImageView
+             android:id="@+id/image1_wel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/pix" 
+             />
+
+         <ImageView
+             android:id="@+id/image2_wel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/nopix" 
+             android:paddingLeft="25dp"
+             android:paddingRight="25dp"
+             />
+
+         <ImageView
+             android:id="@+id/image3_wel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/nopix" />
+
+     </LinearLayout>
+    
+</RelativeLayout>

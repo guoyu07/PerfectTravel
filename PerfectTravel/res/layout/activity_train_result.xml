@@ -1,0 +1,109 @@
+<com.example.utils.SildingFinishLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"  
+     xmlns:tools="http://schemas.android.com/tools"  
+    android:id="@+id/sildingFinishLayout_train"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+ >  
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/train_result_title" 
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车次"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#32ab76"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="站名"
+                android:layout_weight="1"
+                android:gravity="center"
+               android:textColor="#32ab76"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到时"
+                android:layout_weight="1"
+                android:gravity="center"
+                   android:textColor="#32ab76"
+     />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发时"
+                android:layout_weight="1"
+                android:gravity="center"
+                   android:textColor="#32ab76"
+    />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="里程"
+                android:layout_weight="1"
+                android:gravity="center"
+                   android:textColor="#32ab76"
+/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_margin="10dp"
+        >
+        <ListView
+            android:id="@+id/train_result_listview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" 
+            android:scrollbars="none"
+            >
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</com.example.utils.SildingFinishLayout>

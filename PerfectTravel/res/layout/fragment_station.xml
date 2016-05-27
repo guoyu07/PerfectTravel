@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="#f9f9f9"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+         >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center"
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/station_start" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发城市"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:gravity="center_vertical|center"
+             android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/station_arrived" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到达城市" 
+                 android:textSize="15sp"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+         >
+
+        <RelativeLayout
+            android:id="@+id/fragment_station_leave_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:gravity="center_horizontal|right"
+            >
+
+            <ImageView
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/station_imagebutton" 
+                />
+
+            <TextView
+                android:id="@+id/fragment_station_leftStion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+                android:layout_centerInParent="true"
+                android:text="北京"
+                />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/station_interval" 
+            android:layout_weight="6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+           android:layout_gravity="center_vertical"
+            />
+
+        <RelativeLayout
+             android:id="@+id/fragment_station_arrived_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+              android:gravity="center_horizontal|left"
+            >
+
+            <ImageView
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/station_imagebutton"
+                 />
+
+            <TextView
+                android:id="@+id/fragment_station_arrivedStion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+                android:layout_centerInParent="true"
+                android:text="上海"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:id="@+id/fragment_station_data"
+        >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/station_data_background" 
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乘坐日期："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+             />
+
+        <TextView
+            android:id="@+id/fragment_station_dataShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-4-20"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView5"
+            android:paddingLeft="30dp"
+            />
+
+  </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/fragment_station_selecet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/station_selectbutton" 
+            android:adjustViewBounds="true"
+            android:padding="0dip"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

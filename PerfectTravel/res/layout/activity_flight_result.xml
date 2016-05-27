@@ -1,0 +1,555 @@
+<com.example.utils.SildingFinishLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"  
+     xmlns:tools="http://schemas.android.com/tools"  
+    android:id="@+id/sildingFinishLayout_flight"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+ >  
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/layout_flight"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CA1831"
+                android:textColor="#32ab76"
+                android:textSize="17sp" 
+                />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flight_path" 
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+             >
+
+            <TextView
+                android:id="@+id/flight_result_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京"
+                android:textColor="#32ab76"
+                android:textSize="17sp" />
+               <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="—"
+                android:textColor="#32ab76"
+                android:textSize="17sp" />
+               <TextView
+                android:id="@+id/flight_result_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海"
+                android:textColor="#32ab76"
+                android:textSize="17sp" />
+               
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flight_path" 
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-4-18 星期三"
+                android:textColor="#32ab76"
+                android:textSize="17sp"
+                android:singleLine="true"
+                
+                 />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史准点率" 
+                android:layout_marginRight="5dp"
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                />
+              <TextView
+                android:id="@+id/flight_result_OnTimeRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="94%" 
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                />
+            
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center"
+             >
+
+            <TextView
+                android:id="@+id/flight_result_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无餐食"
+               android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1" 
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机型" 
+                android:layout_marginRight="5dp"
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                />
+                  <TextView
+                android:id="@+id/flight_result_AirModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="744"
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                 />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/flight_back"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+             >
+
+            <TextView
+                android:id="@+id/flight_result_DepAirport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京首都国际机场" 
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+       <TextView
+                android:id="@+id/flight_result_DepDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-5-1" 
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_DepWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晴转多云14°C" 
+                 android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计起飞" 
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="航站楼" 
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机场电话" 
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_DepTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:05" 
+                android:textColor="#32ab76"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_DepTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T2"
+                android:textColor="#32ab76"
+                 android:textSize="20sp"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_DepTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4672110" 
+                android:textColor="#32ab76"
+                 android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flight_back"
+         >
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+             >
+
+            <TextView
+                android:id="@+id/flight_result_ArrAirport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成都双流国际机场" 
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+           <TextView
+                android:id="@+id/flight_result_ArrDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-5-1" 
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_ArrWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晴转多云14°C" 
+                 android:textSize="16sp"
+                />
+
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        >
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计到达" 
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="航站楼" 
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机场电话" 
+                android:textColor="#2c2d2d"
+                android:textSize="14sp"
+                />
+
+
+    </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_ArrTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:05" 
+                android:textColor="#32ab76"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_ArrTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T2"
+                android:textColor="#32ab76"
+                 android:textSize="20sp"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/flight_result_ArrTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4672110" 
+                android:textColor="#32ab76"
+                 android:textSize="20sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</com.example.utils.SildingFinishLayout>
